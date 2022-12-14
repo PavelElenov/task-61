@@ -94,9 +94,7 @@
       let elements = document.querySelectorAll(".hot");
       if(elements){
         for(let element of elements){
-          let child = document.createElement("i");
-          child.setAttribute("class", 'fa-solid fa-fire' );
-          element.appendChild(child);
+          element.textContent += "🔥"
         }
       }
     </script>
