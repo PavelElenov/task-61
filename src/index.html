@@ -91,11 +91,9 @@
       </div>
     </div>
     <script>
-      let elements = document.getElementsByClassName(".hot");
-      if(elements){
-        for(let element of elements){
-          element.textContent += "🔥"
-        }
+      let elements = document.querySelectorAll(".hot");
+      for(let element of elements){
+        element.innerHTML += "🔥";
       }
     </script>
   </body>
