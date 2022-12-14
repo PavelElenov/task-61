@@ -91,10 +91,10 @@
       </div>
     </div>
     <script>
-      let elements = document.querySelectorAll(".hot");
-      for(let element of elements){
-        element.innerHTML += "🔥";
-      }
+      const nodeList = document.querySelectorAll(".hot");
+  for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].textContent+="🔥";
+  }
     </script>
   </body>
 </html>
